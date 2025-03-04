@@ -13,9 +13,9 @@ int numero1, numero2;
 
 int soma, subtracao, multiplicacao, divisao;
 
-printf("Entre com o número 1");
+printf("Entre com o numero 1");
 scanf("%d", &numero1);
-printf("Entre com o número 2");
+printf("Entre com o numero 2");
 scanf("%d", &numero2);
 
 // Operação soma
@@ -30,9 +30,9 @@ multiplicacao = numero1 * numero2;
 // Operação divisão
 divisao = numero1 / numero2;
 
-printf("A soma é: %d\n", soma);
-printf("A subtração é: %d\n", subtracao);
-printf("A multiplicação é: %d\n", multiplicacao);
-printf("A divisão é: %d\n", divisao);
+printf("A soma e: %d\n", soma);
+printf("A subtraçao e: %d\n", subtracao);
+printf("A multiplicaçao e: %d\n", multiplicacao);
+printf("A divisao e: %d\n", divisao);
 
 }
