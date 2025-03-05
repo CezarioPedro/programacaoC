@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(){
 
 /*
@@ -10,12 +9,11 @@ Multiplicação(*)    Divisão(/)
 */
 
 int numero1, numero2;
-
 int soma, subtracao, multiplicacao, divisao;
 
-printf("Entre com o numero 1");
+printf("Entre com o numero 1: \n");
 scanf("%d", &numero1);
-printf("Entre com o numero 2");
+printf("Entre com o numero 2: \n");
 scanf("%d", &numero2);
 
 // Operação soma
