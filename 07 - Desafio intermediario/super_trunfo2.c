@@ -6,6 +6,7 @@ int main(){
     char codigocarta[3], nomecidade[15], codigocarta2[3], nomecidade2[15];
     int populacao, pontoturistico, populacao2, pontoturistico2;
     float area, pib, area2, pib2;
+    float densidade, pibpcapita, densidade2, pibpcapita2;
 
     /*Montagem da carta01*/
     printf("***Montando a Carta n01 -***\nInsira o estado selecionado:");
@@ -22,6 +23,8 @@ int main(){
     scanf("%f", &pib);
     printf("Informe o número de pontos turísticos da cidade:");
     scanf("%d", &pontoturistico);
+    densidade = populacao / area;
+    pibpcapita = pib / populacao;
   
     /*Montagem da carta02*/
     printf("***Montando a Carta n02 -***\nInsira o estado selecionado: ");
@@ -38,9 +41,11 @@ int main(){
     scanf("%f", &pib2);
     printf("Informe o número de pontos turísticos da cidade: ");
     scanf("%d", &pontoturistico2);
+    densidade2 = populacao2 / area2;
+    pibpcapita2 = pib2 / populacao2;
 
-    printf("Informações da Carta 01:\nEstado: %c \nCódigo da Carta: %s \nNome da Cidade: %s \nPopulação: %d \nÁrea: %.2f \nPIB: %.2f \nPontos Turísticos: %d \n", estado, codigocarta, nomecidade, populacao, area, pib, pontoturistico);
-    printf("Informações da Carta 02:\nEstado: %c \nCódigo da Carta: %s \nNome da Cidade: %s \nPopulação: %d \nÁrea: %.2f \nPIB: %.2f \nPontos Turísticos: %d \n", estado2, codigocarta2, nomecidade2, populacao2, area2, pib2, pontoturistico2);
+    printf("Informações da Carta 01:\nEstado: %c \nCódigo da Carta: %s \nNome da Cidade: %s \nPopulação: %d \nÁrea: %.2f \nPIB: %.2f \nPontos Turísticos: %d \nDensidade Populacional: %.2f\nPIB per Capita: %.2f", estado, codigocarta, nomecidade, populacao, area, pib, pontoturistico, densidade, pibpcapita);
+    printf("Informações da Carta 02:\nEstado: %c \nCódigo da Carta: %s \nNome da Cidade: %s \nPopulação: %d \nÁrea: %.2f \nPIB: %.2f \nPontos Turísticos: %d \nDensidade Populacional: %.2f\nPIB per Capita: %.2f", estado2, codigocarta2, nomecidade2, populacao2, area2, pib2, pontoturistico2, densidade2, pibpcapita2);
 
     return 0;
 
